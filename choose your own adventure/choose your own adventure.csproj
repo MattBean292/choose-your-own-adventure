@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8EA9F05D-832F-4166-B676-549FAB9A2B1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>choose_your_own_adventure</RootNamespace>
+    <AssemblyName>choose your own adventure</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fantasy-art-digital-town-people-fantasy-architecture-hd-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\37d4cf87f1da7515ff97fd1c33e95f82.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picture-perfect-farm-usfs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragin-in-the-hobbit-the-desolation-of-smaug-wallpaper-thumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\615c4rDYWDL._AC_SL1000_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skull-dark-templar-in-memoriam-alex-cherry-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\85b3633d9a8b42b799ec41be621fdd26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-3616119__480.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barn-on-a-farm-1421407524SdB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patientA-Before-Crowns-Veneers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grab-kreuz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire-flames-1588676448ciG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prison-prison-cell-jail-crime-thumbnail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trophy-1461775452C4L.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wild.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Swords Clashing-SoundBible.com-912903192.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restaurant Ambiance -SoundBible.com-628640170.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mummy Zombie-SoundBible.com-1966938763.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Footsteps-SoundBible.com-534261997.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dragon Roaring-SoundBible.com-213390944.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cicada-SoundBible.com-99344226.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camp Fire Burning-SoundBible.com-783712989.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zombie In Pain-SoundBible.com-134322253.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
